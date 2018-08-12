@@ -1,0 +1,28 @@
+language: node_js
+node_js: stable
+cache:
+  apt: true
+  directories:
+  - node_modules
+install:
+- npm install -g hexo
+- npm install -g hexo-cli
+- npm install
+script:
+- hexo clean
+- hexo g
+after_script:
+- cd ./public
+- git init
+- git config --global user.name "YooMo"
+- git config --global user.email "1018434487"
+- git add -A
+- git commit -m "Travis CI Auto Builder"
+- git push --force -u "https://${REPO_TOKEN}@${GH_REF}" master
+branches:
+  only:
+  - source
+env:
+  global:
+  - GH_REF: github.com/YooMo/yoomo.github.io.git
+  - secure: QLIQwngWqc6CIrfa4zbpO4m5QZ7tZSsPK6jAoq0aLdFnsuXlxObxvM6Jy7yN9O5+zvtTxBWogAifdhu67zoKBKz3NBJAq+fmrMWtHbum8ZZqmvvxmZI23PtzqfTkWencYw0AUIkWslp3jV70nyWrfBcpSKX0RFzK3f3MqYfSHJfmJgAbdjerlDL1d0irRkUnvKh+Hb4/oNUgdIZjvCh7ZZ+5bI6JjspAm5CamYpnry0RktdOzz0A0hFUT4KSsfA/lwljHJRxmzl5znJeo7VkyhEGZ560OBupZC4RFHTqdtsGTWfNEOFzcd5MhMrlCn5RGrvuZHMcVdO5op73dFTjNaEAZNuVkzjLR199stO14MnvQPO8JG8z3KhsWd4D0zXcSD901usO/GgD3VL2z295hMsjpHJ9T4kSeCoIOE/wz5TwisGeZ84tUrODIRXpfanCds3ValjOJe9pGuHkvTw8JcwRZO+qE0nE+S6QY1887qtB7nWTpWHyjVpYoTrtIeQ31YBupIVEW3fPkqonSTPpLLmZ7kQlgl4+2X/99N2MoJBZFuBlGksp6E0HEQ6duF1RUsls6pa7c9VJk1zY0YFiymLPm84AEoBpcu1Hz3/t4fjFMXxIHy6CGS5vmIvM2WXe0qFeS+/HY2vAPZpLdTIgIlRXz0mTFdm+HBJZF1UtSF0=
