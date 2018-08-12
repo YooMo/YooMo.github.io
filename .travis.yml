@@ -15,7 +15,7 @@ after_script:
 - cd ./public
 - git init
 - git config --global user.name "YooMo"
-- git config --global user.email "1018434487"
+- git config --global user.email "1018434487@qq.com"
 - git add -A
 - git commit -m "Travis CI Auto Builder"
 - git push --force -u "https://${REPO_TOKEN}@${GH_REF}" master
@@ -24,5 +24,5 @@ branches:
   - source
 env:
   global:
-  - GH_REF: github.com/YooMo/yoomo.github.io.git
-  - secure: QLIQwngWqc6CIrfa4zbpO4m5QZ7tZSsPK6jAoq0aLdFnsuXlxObxvM6Jy7yN9O5+zvtTxBWogAifdhu67zoKBKz3NBJAq+fmrMWtHbum8ZZqmvvxmZI23PtzqfTkWencYw0AUIkWslp3jV70nyWrfBcpSKX0RFzK3f3MqYfSHJfmJgAbdjerlDL1d0irRkUnvKh+Hb4/oNUgdIZjvCh7ZZ+5bI6JjspAm5CamYpnry0RktdOzz0A0hFUT4KSsfA/lwljHJRxmzl5znJeo7VkyhEGZ560OBupZC4RFHTqdtsGTWfNEOFzcd5MhMrlCn5RGrvuZHMcVdO5op73dFTjNaEAZNuVkzjLR199stO14MnvQPO8JG8z3KhsWd4D0zXcSD901usO/GgD3VL2z295hMsjpHJ9T4kSeCoIOE/wz5TwisGeZ84tUrODIRXpfanCds3ValjOJe9pGuHkvTw8JcwRZO+qE0nE+S6QY1887qtB7nWTpWHyjVpYoTrtIeQ31YBupIVEW3fPkqonSTPpLLmZ7kQlgl4+2X/99N2MoJBZFuBlGksp6E0HEQ6duF1RUsls6pa7c9VJk1zY0YFiymLPm84AEoBpcu1Hz3/t4fjFMXxIHy6CGS5vmIvM2WXe0qFeS+/HY2vAPZpLdTIgIlRXz0mTFdm+HBJZF1UtSF0=
+  - GH_REF: github.com/YooMo/yoomo.github.io
+  - secure: QuvciQeyLaUh8mQWqq95+0Jynzrm6rbcpiI7e8nYnv1vd/ZExkP7hfccrH2uUk0fFYxDZ2yZc1weRvJiZzrtEGqLPB2S6q89L+e1JSSTuPRNW3GYU4WdT0Bfc5V8ExikXgyqzvolKJCrih4jtYsiMSgwkGHRZZE6jYXwKrWfj8I3omC2HElNqg4d5doGmWIl+0tU8XnnBypvpRwIFWrVCCDfa1gJPkZJbMEoMYwCVN7YtbO5m2r6avk7qqPlJ6BZYqPu3rbh5Cx+qHPK207mB9sydAlEFlDYQTrT2TbZDecc2nf7BdrP3LL4kZgkORpBlNuiBDcOM7llPMNTKTMuaWJuZoPoD0gxmJYb3dI5U1aSsz6koJ6OE+37lrtZ/CKLZ2M5fMUbIdNuccSR0GAsq/Ihz5EdFPZcyPauY7DskwLtdAK39mIfEjIQX8grr8E8KlqX3IfH9whNVvnLLgRe7k43iNkxWOriSHlP2Nx/5iXaq0VhjInNjex15eOHKA3xERk7kPDPRe3trqTVvAFwLUn4KtlL7MiAha+3kpceEFUexwurtOU0Wkztb2hknEajnSW9FXEFPjoMAO0tDQCLP991yHI5B5uIUpkhWB88bkyiYZZfzLXoQecfYGK72azSG9oEyBspiyUje9VfbsrmqGFvw6MM+IoG3+trQnASMXY=
