@@ -1,4 +1,4 @@
-# YooMo's Blog ![Travis Ci](https://travis-ci.org/YooMo/yoomo.github.io.svg?branch=source)
+# YooMo's Blog [![Travis Ci](https://travis-ci.org/YooMo/yoomo.github.io.svg?branch=source)](https://travis-ci.org/YooMo/yoomo.github.io)
 A daily that describe my nice life!
 
 ahahha既然你已经看到了，那么恭喜你，你侵犯了我的隐私权！
