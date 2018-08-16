@@ -19,6 +19,7 @@ if %errorlevel%==2 exit
 set /p msg=Commit msg:
 git commit -m "%msg%"
 
+echo Pushing...
 cls
 git push origin source
 
