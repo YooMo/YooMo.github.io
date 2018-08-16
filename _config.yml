@@ -78,6 +78,4 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:YooMo/yoomo.github.io.git
-  branch: master
+  type:
